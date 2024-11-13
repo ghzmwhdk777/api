@@ -1,0 +1,62 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-11-12 14:40:48.311] ** ComfyUI startup time: 2024-11-12 14:40:48.311781
+[2024-11-12 14:40:48.311] ** Platform: Windows
+[2024-11-12 14:40:48.311] ** Python version: 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]
+[2024-11-12 14:40:48.311] ** Python executable: E:\ComfyUI_windows_portable\python_embeded\python.exe
+[2024-11-12 14:40:48.311] ** ComfyUI Path: E:\ComfyUI_windows_portable\ComfyUI\1111_api
+[2024-11-12 14:40:48.311] ** Log path: E:\ComfyUI_windows_portable\ComfyUI\1111_api\comfyui.log
+[2024-11-12 14:40:48.316] 
+Prestartup times for custom nodes:
+[2024-11-12 14:40:48.316]    0.0 seconds: E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\rgthree-comfy
+[2024-11-12 14:40:48.316]    0.0 seconds: E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Easy-Use
+[2024-11-12 14:40:48.316]    1.5 seconds: E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-11-12 14:40:48.316] 
+Total VRAM 24576 MB, total RAM 65328 MB
+[2024-11-12 14:40:48.516] pytorch version: 2.4.0+cu121
+[2024-11-12 14:40:49.377] E:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\xformers\ops\fmha\flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_fwd")
+[2024-11-12 14:40:49.523] E:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\xformers\ops\fmha\flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_bwd")
+[2024-11-12 14:40:49.537] xformers version: 0.0.27.post2
+[2024-11-12 14:40:49.538] Set vram state to: NORMAL_VRAM
+[2024-11-12 14:40:49.538] Device: cuda:0 NVIDIA GeForce RTX 3090 : native
+[2024-11-12 14:40:49.763] Using xformers cross attention
+[2024-11-12 14:40:50.876] Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.
+[2024-11-12 14:40:50.876] Could not find the extra_model_paths config file.
+[2024-11-12 14:40:50.997] [Prompt Server] web root: E:\ComfyUI_windows_portable\ComfyUI\web
+[2024-11-12 14:40:51.279] E:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\kornia\feature\lightglue.py:44: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+[2024-11-12 14:40:51.556] Web extensions folder found at E:\ComfyUI_windows_portable\ComfyUI\web\extensions\ComfyLiterals
+[2024-11-12 14:40:51.557] !!!3dphoto path was added to E:\ComfyUI_windows_portable\python_embeded\Lib\site-packages/3dphoto.pth
+ if meet No module named 'MiDas' error,please restart comfyui
+[2024-11-12 14:40:51.558] 3d-photo-inpainting use cache models,make sure your 'checkpoints' complete
+[2024-11-12 14:40:51.603] Traceback (most recent call last):
+[2024-11-12 14:40:51.604]   File "E:\ComfyUI_windows_portable\ComfyUI\1111_api\flux_schnell_api.py", line 190, in <module>
+[2024-11-12 14:40:51.604]     main()
+[2024-11-12 14:40:51.604]   File "E:\ComfyUI_windows_portable\ComfyUI\1111_api\flux_schnell_api.py", line 119, in main
+[2024-11-12 14:40:51.604]     import_custom_nodes()
+[2024-11-12 14:40:51.604]   File "E:\ComfyUI_windows_portable\ComfyUI\1111_api\flux_schnell_api.py", line 112, in import_custom_nodes
+[2024-11-12 14:40:51.605]     init_extra_nodes()
+[2024-11-12 14:40:51.605]   File "E:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2128, in init_extra_nodes
+[2024-11-12 14:40:51.605]     init_external_custom_nodes()
+[2024-11-12 14:40:51.605]   File "E:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2047, in init_external_custom_nodes
+[2024-11-12 14:40:51.606]     success = load_custom_node(module_path, base_node_names, module_parent="custom_nodes")
+[2024-11-12 14:40:51.606]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-12 14:40:51.607]   File "E:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2001, in load_custom_node
+[2024-11-12 14:40:51.607]     module_spec.loader.exec_module(module)
+[2024-11-12 14:40:51.607]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+[2024-11-12 14:40:51.607]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2024-11-12 14:40:51.608]   File "E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\__init__.py", line 4, in <module>
+[2024-11-12 14:40:51.609]     from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+[2024-11-12 14:40:51.609]   File "E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\nodes.py", line 3, in <module>
+[2024-11-12 14:40:51.618]     from .sampling import motion_sample_factory
+[2024-11-12 14:40:51.618]   File "E:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 22, in <module>
+[2024-11-12 14:40:51.626]     from .conditioning import COND_CONST, LoraHookGroup, conditioning_set_values
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap_external>", line 1612, in find_spec
+[2024-11-12 14:40:51.626]   File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+[2024-11-12 14:40:51.626] KeyboardInterrupt
